@@ -5,6 +5,8 @@ console.log("JSOK");
 
 console.log("Vue OK", Vue);
 
+// URL
+
 const url = "https://flynn.boolean.careers/exercises/api/random/mail";
 
 // Estarpolo il metodo createApp
@@ -21,6 +23,7 @@ const app = createApp({
     };
   },
   methods: {
+    // Random Email
     getRandomEmail() {
       axios.get(url).then((res) => {
         const result = res.data.response;
