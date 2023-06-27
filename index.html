@@ -30,53 +30,13 @@
         <div class="container">
             <h1 class="text-center my-5">Vue Email List</h1>
             <ul class="row row-cols-5 mt-5 text-center list-unstyled">
-                <li class="coll">
+                <li class="coll my-2" v-for="email in listEmail">
                     <div class="card">
                         <div class="card-header">
                             Email
                         </div>
                         <div class="card-body">
-                            <h6>pr8389392ova@gmail.com</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="coll">
-                    <div class="card">
-                        <div class="card-header">
-                            Email
-                        </div>
-                        <div class="card-body">
-                            <h6>prova@gmail.com</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="coll">
-                    <div class="card">
-                        <div class="card-header">
-                            Email
-                        </div>
-                        <div class="card-body">
-                            <h6>prova@gmail.com</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="coll">
-                    <div class="card">
-                        <div class="card-header">
-                            Email
-                        </div>
-                        <div class="card-body">
-                            <h6>prova@gmail.com</h6>
-                        </div>
-                    </div>
-                </li>
-                <li class="coll">
-                    <div class="card">
-                        <div class="card-header">
-                            Email
-                        </div>
-                        <div class="card-body">
-                            <h6>prova@gmail.com</h6>
+                            <h6>{{email}}</h6>
                         </div>
                     </div>
                 </li>

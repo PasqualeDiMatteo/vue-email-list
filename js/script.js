@@ -15,7 +15,23 @@ const { createApp } = Vue;
 
 const app = createApp({
   data() {
-    return {};
+    return {
+      listEmail: [],
+      maxEmail: 10,
+    };
+  },
+  methods: {
+    getRandomEmail() {
+      axios.get(url).then((res) => {
+        const result = res.data.response;
+        this.listEmail.push(result);
+      });
+    },
+  },
+  created() {
+    for (let i = 0; i < this.maxEmail; i++) {
+      this.getRandomEmail();
+    }
   },
 });
 
