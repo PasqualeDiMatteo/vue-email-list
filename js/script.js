@@ -5,6 +5,8 @@ console.log("JSOK");
 
 console.log("Vue OK", Vue);
 
+const url = "https://flynn.boolean.careers/exercises/api/random/mail";
+
 // Estarpolo il metodo createApp
 
 const { createApp } = Vue;
