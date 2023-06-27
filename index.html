@@ -29,7 +29,7 @@
     <div id="root">
         <div class="container">
             <h1 class="text-center my-5">Vue Email List</h1>
-            <ul class="row row-cols-5 mt-5 text-center list-unstyled">
+            <ul class="row row-cols-5 mt-5 text-center list-unstyled" v-if="listEmail.length===maxEmail">
                 <li class="coll my-2" v-for="email in listEmail">
                     <div class="card">
                         <div class="card-header">
@@ -41,6 +41,7 @@
                     </div>
                 </li>
             </ul>
+            <i class="fa-solid fa-spinner fa-spin fa-4x d-flex justify-content-center" v-else></i>
         </div>
     </div>
 </body>
